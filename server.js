@@ -36,7 +36,7 @@ app.get('/profile/:id', (req, res) =>{ profile.handleProfileGET(req, res, knex) 
 
 app.put('/image', (req, res) => { image.handleImage(req, res, knex) });
 
-//app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) });
+
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`app is running on ${process.env.PORT}`)
